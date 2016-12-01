@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>MaterialUI CDN version page test</title>
+	<script src="https://unpkg.com/react@15/dist/react-with-addons.js"></script>
+	<script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    <script src="MaterialUI.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+	
+	<script>
+	
+	var button = React.createElement(MaterialUI.RaisedButton ,{label:"Primary", primary:true, style:{margin:12}});
+	var styledButton = React.createElement(MaterialUI.MuiThemeProvider, {muiTheme:MaterialUI.getMuiTheme(MaterialUI.darkBaseTheme)}, button)
+    ReactDOM.render(styledButton,document.getElementById("root"));
+</script>
+  </body>
+</html>

@@ -22,6 +22,7 @@
   "homepage": "http://material-ui.com/",
   "scripts": {
     "build": "npm run build:icon-index && npm run build:babel && npm run build:copy-files && npm run build:index",
+    "build:cdn": "cross-env NODE_ENV=production webpack -p src/index.js  umd/MaterialUI.min.js ",
     "build:index": "BABEL_ENV=es babel ./src/index.js --out-file ./build/index.es.js",
     "build:icon-index": "babel-node ./scripts/icon-index-generator.js",
     "build:babel": "NODE_ENV=release babel ./src --out-dir ./build --ignore spec.js",

@@ -64,3 +64,6 @@ export Toolbar from './Toolbar';
 export ToolbarGroup from './Toolbar/ToolbarGroup';
 export ToolbarSeparator from './Toolbar/ToolbarSeparator';
 export ToolbarTitle from './Toolbar/ToolbarTitle';
+
+export getMuiTheme from './styles/getMuiTheme';
+export darkBaseTheme from './styles/baseThemes/darkBaseTheme';
